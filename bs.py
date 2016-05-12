@@ -17,6 +17,8 @@ soup = BeautifulSoup(html,"lxml")
 #
 # print soup.a.string
 
+# test github
+
 # for string in soup.stripped_strings :
 #     print(repr(string))
 # print soup.find_all('a')
