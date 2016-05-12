@@ -10,8 +10,8 @@ html = """
 <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
 and they lived at the bottom of a well.</p>
 <p class="story">...</p>
-<a href="http://example.net/elsie" class="sister" id="link1"><!--  Elsie  --></a>"""
-
+"""
+# <a href="http://example.net/elsie" class="sister" id="link1"><!--  Elsie  --></a>
 # soup = BeautifulSoup(open('www.163.com'))
 soup = BeautifulSoup(html,"lxml")
 # print soup.prettify()
@@ -48,7 +48,4 @@ for a in new_a_set:
 new_urls = new_url_set.difference(url_set)
 
 for new_url in new_urls:
-    print new_url, urldict[new_url]
-
-
-
+    print new_url, urldict[new_url],urldict.get(new_url, 'not found')
