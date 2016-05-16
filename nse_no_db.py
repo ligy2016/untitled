@@ -1,6 +1,6 @@
 #coding=utf-8
 #!/usr/bin/python
-
+import pymysql
 from time import sleep, ctime
 from bs4 import BeautifulSoup
 from urllib import urlopen ,urlcleanup
@@ -13,7 +13,7 @@ import copy
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-class scrawl_site():
+class ScrawlSite():
     def __init__(self,url,tablename):
         self.url = url
         self.tablename = tablename
@@ -22,7 +22,7 @@ class scrawl_site():
         self.url_set = set()
         self.new_a_set = set()
         self.new_url_set = set()
-        self.soup = BeautifulSoup()
+        self.soup = BeautifulSoup( "lxml")
 
     def GetSiteContent(self):
         req = urllib2.Request("http://money.163.com/")
@@ -37,9 +37,9 @@ class scrawl_site():
         for a in self.new_a_set:
             self.new_url_set.add(a["href"])
             # self.addUrl(urldict, a["href"], a.string)
-            self.urldict.setdefault(url, []).append(title)
-        self.new_urls = self.new_url_set.difference(url_set)
-        return self.new_urls,self.urldict
+            self.urldict.setdefault(a["href"], []).append(a.string)
+        self.new_urls = self.new_url_set.difference(self.url_set)
+        return self.tablename,self.new_urls,self.urldict
 
         # print len(self.new_url_set), len(self.url_set), len(self.new_urls)
         # for new_url in new_urls:
@@ -50,7 +50,9 @@ class scrawl_site():
         self.new_url_set.clear()
         self.urldict.clear()
         self.new_urls.clear()
-
+class SS_163(ScrawlSite):
+    def FindPattern(self):
+        self.new_a_set = self.soup.find_all(href=re.compile("163.com"), text=True)
 class MYSQL:
     """
     对pymysql的简单封装
@@ -74,8 +76,10 @@ class MYSQL:
             raise(NameError,"连接数据库失败")
         else:
             return cur
-    def save(self,tablename,url,title):
-        sqlstr = "insert into `db_1`.'%s' (`url`, `title`,`date`) values ('%s','%s',now() )" % (tablename,url, title.strip())
+    def SaveContent(self, tablename, url, title):
+        sqlstr = "insert into `db_1`.`%s` (`url`, `title`,`date`) values ('%s','%s',now() )" % (tablename,url, title.strip())
+        self.cur.execute(sqlstr)
+        self.conn.commit()
 
 
     def ExecQuery(self,sql):
@@ -118,44 +122,26 @@ class MYSQL:
         # self.conn.close()
 
 
-def addUrl(urldict, url, title):
-    urldict.setdefault(url, []).append(title)
+# def addUrl(urldict, url, title):
+#     urldict.setdefault(url, []).append(title)
 def main():
+    mysql = MYSQL(host="127.0.0.1", user="root", pwd="123456", db="db_1")
+    ss = SS_163(url = "http://money.163.com/",tablename = "urls_163")
 
-    urldict = {}
-    a_set = set()
-    url_set = set()
-    new_a_set = set()
-    new_url_set = set()
 
+    mysql.ConnectDB()
 
     while(1):
         print "time.ctime() : %s" % time.ctime()
+        ss.GetSiteContent()
+        ss.FindPattern()
+        (tablename,urls,dict) = ss.GetNewLinks()
+        for url in urls:
+            mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
+        ss.UpdateSet()
+        sleep(120)
 
-        req = urllib2.Request("http://money.163.com/")
-        req.add_header('Cache-Control', 'max-age=0')
-        resp = urllib2.urlopen(req)
-        # content = resp.read()
-
-        soup = BeautifulSoup(resp.read(), "lxml")
-
-        new_a_set = soup.find_all(href=re.compile("163.com"),text=True)
-        for a in new_a_set:
-
-            new_url_set.add(a["href"])
-            addUrl(urldict, a["href"], a.string)
-
-        new_urls = new_url_set.difference(url_set)
-        print len(new_url_set),len(url_set),len(new_urls)
-        for new_url in new_urls:
-            print new_url, urldict[new_url][0]
-            # urldict.get(new_url, 'not found')
-
-        url_set = copy.deepcopy(new_url_set)
-        new_url_set.clear()
-        urldict.clear()
-
-        sleep(200)
+    mysql.DisconnectDB()
 
 
 if __name__ == '__main__':
