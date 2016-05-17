@@ -1,6 +1,6 @@
 #coding=utf-8
 #!/usr/bin/python
-import pymysql
+# import pymysql
 from time import sleep, ctime
 from bs4 import BeautifulSoup
 from urllib import urlopen ,urlcleanup
@@ -29,9 +29,10 @@ class ScrawlSite():
         req.add_header('Cache-Control', 'max-age=0')
         resp = urllib2.urlopen(req)
         self.soup = BeautifulSoup(resp.read(), "lxml")
+        resp.close()
 
     def FindPattern(self):
-        self.new_a_set = self.soup.find_all(href=re.compile("163.com"), text=True)
+        self.new_a_set = self.soup.find_all(href=re.compile(".com"), text=True)
         pass
     def GetNewLinks(self):
         for a in self.new_a_set:
@@ -129,7 +130,7 @@ def main():
     ss = SS_163(url = "http://money.163.com/",tablename = "urls_163")
 
 
-    mysql.ConnectDB()
+    # mysql.ConnectDB()
 
     while(1):
         print "time.ctime() : %s" % time.ctime()
@@ -137,11 +138,12 @@ def main():
         ss.FindPattern()
         (tablename,urls,dict) = ss.GetNewLinks()
         for url in urls:
-            mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
+            print url,dict.get(url, 'not found')[0].strip()
+            # mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
         ss.UpdateSet()
         sleep(120)
 
-    mysql.DisconnectDB()
+    # mysql.DisconnectDB()
 
 
 if __name__ == '__main__':
