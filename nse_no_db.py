@@ -25,7 +25,7 @@ class ScrawlSite():
         self.soup = BeautifulSoup( "lxml")
 
     def GetSiteContent(self):
-        req = urllib2.Request("http://money.163.com/")
+        req = urllib2.Request(self.url)
         req.add_header('Cache-Control', 'max-age=0')
         resp = urllib2.urlopen(req)
         self.soup = BeautifulSoup(resp.read(), "lxml")
@@ -54,6 +54,13 @@ class ScrawlSite():
 class SS_163(ScrawlSite):
     def FindPattern(self):
         self.new_a_set = self.soup.find_all(href=re.compile("163.com"), text=True)
+
+class SS_Wallstreet(ScrawlSite):
+    def FindPattern(self):
+        self.new_a_set = self.soup.find_all(href=re.compile("node"), text=True)
+class SS_fx168(ScrawlSite):
+    def FindPattern(self):
+        self.new_a_set = self.soup.find_all(href=re.compile("fx168"), text=True)
 class MYSQL:
     """
     对pymysql的简单封装
@@ -128,21 +135,40 @@ class MYSQL:
 def main():
     mysql = MYSQL(host="127.0.0.1", user="root", pwd="123456", db="db_1")
     ss = SS_163(url = "http://money.163.com/",tablename = "urls_163")
-
-
+    ss_wallstreet = SS_Wallstreet(url = "http://wallstreetcn.com/",tablename = "urls_163")
+    ss_fx168 = SS_fx168(url = "http://www.fx168.com/forex/all/",tablename = "urls_163")
     # mysql.ConnectDB()
 
     while(1):
-        print "time.ctime() : %s" % time.ctime()
+
         ss.GetSiteContent()
         ss.FindPattern()
         (tablename,urls,dict) = ss.GetNewLinks()
         for url in urls:
+            print "time.ctime() : %s" % time.ctime()
             print url,dict.get(url, 'not found')[0].strip()
             # mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
         ss.UpdateSet()
-        sleep(120)
 
+        ss_wallstreet.GetSiteContent()
+        ss_wallstreet.FindPattern()
+        (tablename,urls,dict) = ss_wallstreet.GetNewLinks()
+        for url in urls:
+            print "time.ctime() : %s" % time.ctime()
+            print url,dict.get(url, 'not found')[0].strip()
+            # mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
+        ss_wallstreet.UpdateSet()
+
+        ss_fx168.GetSiteContent()
+        ss_fx168.FindPattern()
+        (tablename,urls,dict) = ss_fx168.GetNewLinks()
+        for url in urls:
+            print "time.ctime() : %s" % time.ctime()
+            print url,dict.get(url, 'not found')[0].strip()
+
+        ss_fx168.UpdateSet()
+
+        sleep(120)
     # mysql.DisconnectDB()
 
 
