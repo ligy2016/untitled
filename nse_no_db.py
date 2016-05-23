@@ -20,14 +20,18 @@ class ScrawlSite():
         self.urldict = {}
         self.a_set = set()
         self.url_set = set()
-        self.new_a_set = set()
+        # self.new_a_set = set()
+        self.new_urls = set()
         self.new_url_set = set()
         self.soup = BeautifulSoup( "lxml")
 
     def GetSiteContent(self):
         req = urllib2.Request(self.url)
         req.add_header('Cache-Control', 'max-age=0')
-        resp = urllib2.urlopen(req)
+        try:
+            resp = urllib2.urlopen(req, timeout=10)
+        except urllib2.HTTPError, e:
+            print e.code
         self.soup = BeautifulSoup(resp.read(), "lxml")
         resp.close()
 
@@ -37,9 +41,10 @@ class ScrawlSite():
     def GetNewLinks(self):
         for a in self.new_a_set:
             self.new_url_set.add(a["href"])
-            # self.addUrl(urldict, a["href"], a.string)
             self.urldict.setdefault(a["href"], []).append(a.string)
         self.new_urls = self.new_url_set.difference(self.url_set)
+        for url in self.new_urls:
+            print "ctime : %s" % time.ctime(), self.urldict.get(url, 'not found')[0].strip(),url
         return self.tablename,self.new_urls,self.urldict
 
         # print len(self.new_url_set), len(self.url_set), len(self.new_urls)
@@ -47,10 +52,17 @@ class ScrawlSite():
         #     print new_url, self.urldict[new_url][0]
 
     def UpdateSet(self):
-        self.url_set = copy.deepcopy(self.new_url_set)
+        if(self.new_url_set != None):
+            self.url_set = copy.deepcopy(self.new_url_set)
         self.new_url_set.clear()
         self.urldict.clear()
         self.new_urls.clear()
+    def gg(self):
+        self.UpdateSet()
+        self.GetSiteContent()
+        self.FindPattern()
+        return self.GetNewLinks()
+
 class SS_163(ScrawlSite):
     def FindPattern(self):
         self.new_a_set = self.soup.find_all(href=re.compile("163.com"), text=True)
@@ -141,34 +153,13 @@ def main():
 
     while(1):
 
-        ss.GetSiteContent()
-        ss.FindPattern()
-        (tablename,urls,dict) = ss.GetNewLinks()
-        for url in urls:
-            print "time.ctime() : %s" % time.ctime()
-            print url,dict.get(url, 'not found')[0].strip()
-            # mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
-        ss.UpdateSet()
+        (tablename, urls, dict) = ss.gg()
 
-        ss_wallstreet.GetSiteContent()
-        ss_wallstreet.FindPattern()
-        (tablename,urls,dict) = ss_wallstreet.GetNewLinks()
-        for url in urls:
-            print "time.ctime() : %s" % time.ctime()
-            print url,dict.get(url, 'not found')[0].strip()
-            # mysql.SaveContent(tablename,url,dict.get(url, 'not found')[0].strip())
-        ss_wallstreet.UpdateSet()
+        (tablename, urls, dict) = ss_wallstreet.gg()
 
-        ss_fx168.GetSiteContent()
-        ss_fx168.FindPattern()
-        (tablename,urls,dict) = ss_fx168.GetNewLinks()
-        for url in urls:
-            print "time.ctime() : %s" % time.ctime()
-            print url,dict.get(url, 'not found')[0].strip()
+        (tablename, urls, dict) = ss_fx168.gg()
 
-        ss_fx168.UpdateSet()
-
-        sleep(120)
+        sleep(300)
     # mysql.DisconnectDB()
 
 
