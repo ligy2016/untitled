@@ -1,6 +1,6 @@
 #coding=utf-8
 #!/usr/bin/python
-# import pymysql
+import pymysql
 from time import sleep, ctime
 from bs4 import BeautifulSoup
 from urllib import urlopen ,urlcleanup
@@ -30,8 +30,8 @@ class ScrawlSite():
         req.add_header('Cache-Control', 'max-age=0')
         try:
             resp = urllib2.urlopen(req, timeout=10)
-        except urllib2.HTTPError, e:
-            print e.code
+        except :
+            return 1 #忽略超时等其他错误
         self.soup = BeautifulSoup(resp.read(), "lxml")
         resp.close()
 
@@ -44,7 +44,8 @@ class ScrawlSite():
             self.urldict.setdefault(a["href"], []).append(a.string)
         self.new_urls = self.new_url_set.difference(self.url_set)
         for url in self.new_urls:
-            print "ctime : %s" % time.ctime(), self.urldict.get(url, 'not found')[0].strip(),url
+            if len(self.urldict.get(url, 'not found')[0].strip())>4 :
+                print "%s" % time.ctime(), self.urldict.get(url, 'not found')[0].strip(),url
         return self.tablename,self.new_urls,self.urldict
 
         # print len(self.new_url_set), len(self.url_set), len(self.new_urls)
@@ -59,7 +60,9 @@ class ScrawlSite():
         self.new_urls.clear()
     def gg(self):
         self.UpdateSet()
-        self.GetSiteContent()
+        ret = self.GetSiteContent()
+        if ret == 1:
+            return (None,None,None)
         self.FindPattern()
         return self.GetNewLinks()
 
@@ -70,9 +73,11 @@ class SS_163(ScrawlSite):
 class SS_Wallstreet(ScrawlSite):
     def FindPattern(self):
         self.new_a_set = self.soup.find_all(href=re.compile("node"), text=True)
+
 class SS_fx168(ScrawlSite):
     def FindPattern(self):
         self.new_a_set = self.soup.find_all(href=re.compile("fx168"), text=True)
+
 class MYSQL:
     """
     对pymysql的简单封装
@@ -97,7 +102,7 @@ class MYSQL:
         else:
             return cur
     def SaveContent(self, tablename, url, title):
-        sqlstr = "insert into `db_1`.`%s` (`url`, `title`,`date`) values ('%s','%s',now() )" % (tablename,url, title.strip())
+        sqlstr = "insert into `new_schema`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (tablename, title.strip(),url)
         self.cur.execute(sqlstr)
         self.conn.commit()
 
@@ -145,23 +150,24 @@ class MYSQL:
 # def addUrl(urldict, url, title):
 #     urldict.setdefault(url, []).append(title)
 def main():
-    mysql = MYSQL(host="127.0.0.1", user="root", pwd="123456", db="db_1")
-    ss = SS_163(url = "http://money.163.com/",tablename = "urls_163")
-    ss_wallstreet = SS_Wallstreet(url = "http://wallstreetcn.com/",tablename = "urls_163")
-    ss_fx168 = SS_fx168(url = "http://www.fx168.com/forex/all/",tablename = "urls_163")
-    # mysql.ConnectDB()
+    mysql = MYSQL(host="127.0.0.1", user="root", pwd="123456", db="new_schema")
+    ss = SS_163(url = "http://money.163.com/",tablename = "urls")
+    ss_wallstreet = SS_Wallstreet(url = "http://wallstreetcn.com/",tablename = "urls")
+    ss_fx168 = SS_fx168(url = "http://www.fx168.com/forex/all/",tablename = "urls")
+    mysql.ConnectDB()
 
     while(1):
-
         (tablename, urls, dict) = ss.gg()
-
+        for url in urls:
+            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
         (tablename, urls, dict) = ss_wallstreet.gg()
-
+        for url in urls:
+            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
         (tablename, urls, dict) = ss_fx168.gg()
-
+        for url in urls:
+            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
         sleep(300)
-    # mysql.DisconnectDB()
-
+    mysql.DisconnectDB()
 
 if __name__ == '__main__':
     main()
