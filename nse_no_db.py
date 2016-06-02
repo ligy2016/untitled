@@ -104,7 +104,14 @@ class MYSQL:
     def SaveContent(self, tablename, url, title):
         sqlstr = "insert into `new_schema`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (tablename, title.strip(),url)
         self.cur.execute(sqlstr)
-        self.conn.commit()
+        # self.conn.commit()
+
+    def SaveUrls(self, tablename, urls, dict):
+        if urls is None:
+            return
+        else:
+            for url in urls:
+                self.SaveContent('urls', url, dict.get(url, 'not found')[0].strip())
 
 
     def ExecQuery(self,sql):
@@ -158,14 +165,13 @@ def main():
 
     while(1):
         (tablename, urls, dict) = ss.gg()
-        for url in urls:
-            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
+        mysql.SaveUrls( 'urls', urls, dict)
         (tablename, urls, dict) = ss_wallstreet.gg()
-        for url in urls:
-            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
+        mysql.SaveUrls( 'urls', urls, dict)
         (tablename, urls, dict) = ss_fx168.gg()
-        for url in urls:
-            mysql.SaveContent( 'urls', url, dict.get(url, 'not found')[0].strip())
+        mysql.SaveUrls( 'urls', urls, dict)
+
+        mysql.conn.commit()
         sleep(300)
     mysql.DisconnectDB()
 
