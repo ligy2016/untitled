@@ -112,7 +112,7 @@ def OpenUrl(url):
     # resp.close()
     resp.urlretrieve(url, r"d:\temp\1.html")
     for eachLine in resp:
-# return resp
+        return resp
 
 
 
@@ -126,16 +126,29 @@ def main():
     # seg_list = jieba.cut(text, cut_all=True)
     # print u"[全模式]: ", "/ ".join(seg_list)
     # text = pt.text
-    # tags = jieba.analyse.extract_tags(text, topK=8)
 
-    # print ",".join(tags)
     # print remove_empty_line(text)
     # remove_jiankuohao(text)
 
     # eachline()
     # compute_density(text)
-    str = OpenUrl("http://news.sina.com.cn/c/2016-08-03/doc-ifxuszpp2792303.shtml")
+    # str = OpenUrl("http://news.sina.com.cn/c/2016-08-03/doc-ifxuszpp2792303.shtml")
+    str ='''如果说在当前平淡的A股市场上，还有什么事较受关注的，明星私募的动向算一个。最新资料显示，王亚伟、辛宇等人所在的私募公司，第三季度都有所调仓，最大特征之一是新进了一些国企改革概念股。
+　　私募大佬王亚伟的持仓变化就较为明显。王亚伟旗下的千合资本今年三季度大幅减持一汽夏利（000927），退出了在二季度大量持有的天邦股份（002124），歌华有线（600037）、燕京啤酒（000729）等则继续持有，变化不大。
+　　值得注意的是，千合资本三季度共进入了5家上市公司十大流通股股东中，包括第一医药（600833）、国机通用（600444）、北京城乡（600861）、天威视讯（002238）、金安国纪（002636）。这种新持股数量，相比二季度大幅增加。在这之中，持有最多的是第一医药：昀沣信托持有第一医药292万股。
+　　另一位知名私募大佬辛宇旗下拥有广东泽泉投资、北京神州牧两大平台，则于三季度新进贵州百灵（002424）、张家界（000430）、罗普斯金（002333）、民生控股（000416）、友利控股（000584）、圣阳股份（002580）、铜峰电子（600237）、荣华实业（600311）。'''
+
     print str
+
+    tags = jieba.analyse.extract_tags(str, topK=8)
+
+    print ",".join(tags)
+    # print type(tags)
+
+    if u'王亚' in tags:
+        print 'in'
+    else:
+        print  'not in'
     # save_html(str)
     # data = get_filter_lines(str)
     # print type(data)
