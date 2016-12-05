@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/chinese.py" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab723786-2247-4080-a426-4a5a0b3e0c37" name="Default" comment="" />
+    <list default="true" id="ab723786-2247-4080-a426-4a5a0b3e0c37" name="Default" comment="oo">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dfcf_spider.py" afterPath="$PROJECT_DIR$/dfcf_spider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nse_kw.py" afterPath="$PROJECT_DIR$/nse_kw.py" />
+    </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +32,8 @@
       <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+            <state relative-caret-position="2403">
+              <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -36,12 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="set.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/set.py">
+      <file leaf-file-name="nse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1809">
+              <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
+              <folding>
+                <element signature="e#303#1887#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +56,7 @@
       <file leaf-file-name="chinese.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chinese.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="270">
               <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
@@ -61,8 +68,8 @@
       <file leaf-file-name="bs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="1323">
+              <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -70,35 +77,109 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nse.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nse.py">
+      <file leaf-file-name="nse_no_db.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nse_no_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state relative-caret-position="810">
+              <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
               <folding>
-                <element signature="e#33#47#0" expanded="true" />
+                <element signature="e#32#46#0" expanded="true" />
+                <element signature="e#2301#2372#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4698">
+              <caret line="182" column="10" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
+              <folding>
+                <element signature="e#32#46#0" expanded="true" />
+                <element signature="e#2339#2410#0" expanded="false" />
+                <element signature="e#2444#2547#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gettext.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gettext.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="96" column="35" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="35" />
+              <folding>
+                <element signature="e#33#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nse_kw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nse_kw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1134">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="e#32#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dfcf_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dfcf_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+              <folding>
+                <element signature="e#32#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numpy_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numpy_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/1.py" />
         <option value="$PROJECT_DIR$/chinese.py" />
-        <option value="$PROJECT_DIR$/set.py" />
         <option value="$PROJECT_DIR$/bs.py" />
         <option value="$PROJECT_DIR$/nse.py" />
+        <option value="$PROJECT_DIR$/nse_no_db" />
+        <option value="$PROJECT_DIR$/set.py" />
+        <option value="$PROJECT_DIR$/urllib.py" />
+        <option value="$PROJECT_DIR$/urllib_study.py" />
+        <option value="$PROJECT_DIR$/numpy_1.py" />
+        <option value="$PROJECT_DIR$/pc.py" />
+        <option value="$PROJECT_DIR$/gettext.py" />
+        <option value="$PROJECT_DIR$/nse_no_db.py" />
+        <option value="$PROJECT_DIR$/nse_kw.py" />
+        <option value="$PROJECT_DIR$/dfcf_spider.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="width" value="1491" />
-    <option name="height" value="1027" />
+    <option name="x" value="5" />
+    <option name="width" value="1899" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -111,7 +192,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -124,45 +205,15 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.9 (D:\Python27\python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ipnb.configuration.IpnbConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
   </component>
-  <component name="RunManager" selected="Python.bs">
-    <configuration default="false" name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dfcf_spider">
+    <configuration default="false" name="nse_no_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -174,12 +225,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nse_no_db.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="set" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="gettext" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -191,7 +242,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gettext.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -213,7 +264,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="bs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="nse_kw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -225,7 +276,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nse_kw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dfcf_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dfcf_spider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -364,18 +432,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.set" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.nse_no_db" />
+      <item index="1" class="java.lang.String" itemvalue="Python.gettext" />
       <item index="2" class="java.lang.String" itemvalue="Python.chinese" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.nse_kw" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dfcf_spider" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.bs" />
-        <item index="1" class="java.lang.String" itemvalue="Python.set" />
-        <item index="2" class="java.lang.String" itemvalue="Python.chinese" />
-        <item index="3" class="java.lang.String" itemvalue="Python.1" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.dfcf_spider" />
+        <item index="1" class="java.lang.String" itemvalue="Python.nse_kw" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gettext" />
+        <item index="3" class="java.lang.String" itemvalue="Python.nse_no_db" />
+        <item index="4" class="java.lang.String" itemvalue="Python.chinese" />
       </list>
     </recent_temporary>
   </component>
@@ -393,6 +463,119 @@
       <option name="presentableId" value="Default" />
       <updated>1460514110129</updated>
     </task>
+    <task id="LOCAL-00001" summary="lll">
+      <created>1463367287419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463367287419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="oo">
+      <created>1463388405097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1463388405097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="oo">
+      <created>1463395541003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1463395541003</updated>
+    </task>
+    <task id="LOCAL-00004" summary="xx">
+      <created>1463479934651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1463479934651</updated>
+    </task>
+    <task id="LOCAL-00005" summary="hhhh">
+      <created>1463566205653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1463566205653</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ooo">
+      <created>1463989005647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1463989005647</updated>
+    </task>
+    <task id="LOCAL-00007" summary="work pc MySQL ok">
+      <created>1464681108543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1464681108543</updated>
+    </task>
+    <task id="LOCAL-00008" summary="jj">
+      <created>1464861217857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1464861217857</updated>
+    </task>
+    <task id="LOCAL-00009" summary="jieba">
+      <created>1469499874741</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1469499874741</updated>
+    </task>
+    <task id="LOCAL-00010" summary="oo">
+      <created>1470898389716</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1470898389716</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new">
+      <created>1473041919968</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1473041919968</updated>
+    </task>
+    <task id="LOCAL-00012" summary="oo">
+      <created>1474970117368</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1474970117368</updated>
+    </task>
+    <task id="LOCAL-00013" summary="oo">
+      <created>1478598007858</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1478598007858</updated>
+    </task>
+    <task id="LOCAL-00014" summary="oo">
+      <created>1478855680963</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1478855680963</updated>
+    </task>
+    <task id="LOCAL-00015" summary="oo">
+      <created>1479203497342</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1479203497342</updated>
+    </task>
+    <task id="LOCAL-00016" summary="东方财富">
+      <created>1480500257673</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1480500257673</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -405,25 +588,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="0" width="1491" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="5" y="0" width="1899" height="1038" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16242257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27566963" sideWeight="0.5166297" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.41775638" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25529543" sideWeight="0.47960848" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29799107" sideWeight="0.76531315" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.48589125" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16512455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734289" sideWeight="0.48735633" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23925027" sideWeight="0.50994086" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.31494254" sideWeight="0.44868422" order="3" side_tool="false" content_ui="combo" x="560" y="99" width="564" height="735" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23925027" sideWeight="0.4900591" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26571113" sideWeight="0.6410532" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12144008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16979052" sideWeight="0.53036004" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5822436" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.57880247" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.49710983" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.49739778" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -438,6 +621,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lll" />
+    <MESSAGE value="xx" />
+    <MESSAGE value="hhhh" />
+    <MESSAGE value="ooo" />
+    <MESSAGE value="work pc MySQL ok" />
+    <MESSAGE value="jj" />
+    <MESSAGE value="jieba" />
+    <MESSAGE value="new" />
+    <MESSAGE value="oo" />
+    <MESSAGE value="东方财富" />
+    <option name="LAST_COMMIT_MESSAGE" value="东方财富" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -447,10 +643,204 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nse_no_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#2301#2372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinese.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="117" selection-end-column="38" />
+          <folding>
+            <element signature="e#303#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="117" selection-end-column="38" />
+          <folding>
+            <element signature="e#303#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse_no_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#2301#2372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinese.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
+          <folding>
+            <element signature="e#303#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="116" column="113" selection-start-line="116" selection-start-column="106" selection-end-line="116" selection-end-column="113" />
+          <folding>
+            <element signature="e#303#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinese.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -465,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -523,9 +912,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nse_no_db" />
+    <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/1494736245/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="2810" column="8" selection-start-line="2810" selection-start-column="8" selection-end-line="2810" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib.py" />
+    <entry file="file://D:/Python27/Lib/compiler/ast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/163.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205555">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/DLLs/bz2.pyd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/bs4/builder/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/lib-tk/test/test_tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/lib-tk/test/test_tkinter/test_geometry_managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5670">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib_study.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2403">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="1243" column="8" selection-start-line="1243" selection-start-column="8" selection-end-line="1243" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
+          <folding>
+            <element signature="e#303#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gettext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="e#33#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse_no_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#2301#2372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chinese.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="270">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
@@ -533,41 +1042,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/set.py">
+    <entry file="file://$PROJECT_DIR$/pc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        <state relative-caret-position="4698">
+          <caret line="182" column="10" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#2339#2410#0" expanded="false" />
+            <element signature="e#2444#2547#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="1323">
+          <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nse.py">
+    <entry file="file://$PROJECT_DIR$/nse_kw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="1134">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="e#33#47#0" expanded="true" />
+            <element signature="e#32#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfcf_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numpy_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
