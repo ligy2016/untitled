@@ -104,7 +104,7 @@ class kws():
 
 def main():
 
-    k = kws(domains=[],kw=[u'PMI'],start_url = 'http://finance.eastmoney.com/news/chgyj.html')
+    k = kws(domains=[],kw=[],start_url = 'http://finance.eastmoney.com/news/chgyj.html')
     # k.find_all_links(url = k.url)
     # k.read_next_pages(url = k.url)
     k.read_n_pages(n = 1)
