@@ -3,7 +3,7 @@
 import pymysql
 from time import sleep, ctime
 from bs4 import BeautifulSoup
-import pymongo
+
 from urllib import urlopen ,urlcleanup
 import urllib2
 import re
@@ -23,6 +23,9 @@ class kws():
 
         req = urllib2.Request(url)
         req.add_header('Cache-Control', 'max-age=0')
+        req.add_header("User-Agent",
+                      "Mozilla/5.0 (X11; Linux x86_6) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22")
+
         while attempts < 3 and not success:
             try:
                 resp = urllib2.urlopen(req, timeout=10)
@@ -101,13 +104,21 @@ class kws():
         else:
             return #到最后一页了
 
+class baidu_search(kws):
+    def find_all_links(self, url):
+        self.parse_page(url)
+        for i in range(1,11,1):
+            all_links = self.soup.find('table',id = str(i))
+            print re.sub(r'''<[^>]+>''', '', str(all_links.find('a'))),re.sub(r'''<[^>]+>''', '', str(all_links.find('font')))
+        return
 
 def main():
 
-    k = kws(domains=[],kw=[],start_url = 'http://finance.eastmoney.com/news/chgyj.html')
-    # k.find_all_links(url = k.url)
-    # k.read_next_pages(url = k.url)
-    k.read_n_pages(n = 1)
+    # k = kws(domains=[],kw=[],start_url = 'http://forex.eastmoney.com/news/cdhgd.html')
+    # k.read_n_pages(n = 10)
+    bd = baidu_search(domains=[], kw=[], start_url \
+       = 'https://www.baidu.com/s?tn=baidurt&rtt=1&bsst=1&cl=3&ie=utf-8&bs=%E6%AC%A7%E6%B4%B2%E5%A4%AE%E8%A1%8C&f=8&rsv_bp=1&wd=%E8%8B%B1%E5%9B%BD%E5%A4%AE%E8%A1%8C&inputT=4700')
+    bd.find_all_links(url=bd.url)
 
 if __name__ == '__main__':
     main()
