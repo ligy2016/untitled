@@ -9,6 +9,7 @@ import urllib2
 import re
 import time
 import os
+import savemd
 class kws():
     def __init__(self, domains, kw,start_url):
         self.domains = domains
@@ -112,13 +113,18 @@ class baidu_search(kws):
             print re.sub(r'''<[^>]+>''', '', str(all_links.find('a'))),re.sub(r'''<[^>]+>''', '', str(all_links.find('font')))
         return
 
+
+
+
 def main():
 
-    # k = kws(domains=[],kw=[],start_url = 'http://forex.eastmoney.com/news/cdhgd.html')
-    # k.read_n_pages(n = 10)
-    bd = baidu_search(domains=[], kw=[], start_url \
-       = 'https://www.baidu.com/s?tn=baidurt&rtt=1&bsst=1&cl=3&ie=utf-8&bs=%E6%AC%A7%E6%B4%B2%E5%A4%AE%E8%A1%8C&f=8&rsv_bp=1&wd=%E8%8B%B1%E5%9B%BD%E5%A4%AE%E8%A1%8C&inputT=4700')
-    bd.find_all_links(url = bd.url)
+    k = kws(domains=[],kw=[],start_url = 'http://forex.eastmoney.com/news/cdhgd.html')
+    while (1):
+        k.find_all_links(url=k.url)
+        sleep(120)
+    # bd = baidu_search(domains=[], kw=[], start_url \
+    #    = 'https://www.baidu.com/s?tn=baidurt&rtt=1&bsst=1&cl=3&ie=utf-8&bs=%E6%AC%A7%E6%B4%B2%E5%A4%AE%E8%A1%8C&f=8&rsv_bp=1&wd=%E8%8B%B1%E5%9B%BD%E5%A4%AE%E8%A1%8C&inputT=4700')
+    # bd.find_all_links(url = bd.url)
 
 if __name__ == '__main__':
     main()
