@@ -1,10 +1,9 @@
 #coding=utf-8
-
 # import numpy as np
 from pandas import  *
 
 def test_pandas():
-    obj = series([4,7,-5,3])
+    obj = pandas.Series([4,7,-5,3])
     print obj
 
 # arry1 = np.array(data1)

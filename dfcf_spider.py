@@ -1,10 +1,6 @@
 #coding=utf-8
-#!/usr/bin/python
-import pymysql
 from time import sleep, ctime
 from bs4 import BeautifulSoup
-
-from urllib import urlopen ,urlcleanup
 import urllib2
 import re
 import time
@@ -44,8 +40,30 @@ class kws():
     def get_content(self,url):
         self.parse_page(url)
         # print self.soup.find_all('p')
-        print self.soup.find(class_='time').text
-        print re.sub(r'''<[^>]+>''', '', str(self.soup.find(id='ContentBody')))
+        t = self.soup.find(class_='time').text
+        context = re.sub(r'''<[^>]+>''', '', str(self.soup.find(id='ContentBody')))
+        print t,context
+        return (t,context)
+
+    def downloadImg(html):
+        reg = r'src="(.+?\.jpg)" pic_ext'
+        imgre = re.compile(reg)
+        imglist = re.findall(imgre, html)
+        # 定义文件夹的名字
+        t = time.localtime(time.time())
+        foldername = str(t.__getattribute__("tm_year")) + "-" + str(t.__getattribute__("tm_mon")) + "-" + str(
+            t.__getattribute__("tm_mday"))
+        picpath = 'D:\\ImageDownload\\%s' % (foldername)  # 下载到的本地目录
+
+        if not os.path.exists(picpath):  # 路径不存在时创建一个
+            os.makedirs(picpath)
+        x = 0
+        for imgurl in imglist:
+            target = picpath + '\\%s.jpg' % x
+            print 'Downloading image to location: ' + target + '\nurl=' + imgurl
+            image = urllib.urlretrieve(imgurl, target,  schedule)
+            x += 1
+        return image;
 
     #找到页面的所有的链接
     def find_all_links(self,url):
@@ -53,8 +71,8 @@ class kws():
         # for s in self.domains:
         div = self.soup.find(id = 'newsListContent')
         all_links = div.find_all(href=True, text = True)
-        # , text = True
-        # self.new_a_set = self.soup.find_all(href=re.compile(".com"), text=True)
+
+        m = savemd.MD(dbname='test', collname='test')
 
         if len(self.kw )>0:  #标题关键字查找
             for l in all_links:
@@ -62,14 +80,18 @@ class kws():
                     for kw in self.kw:
                         if kw in l.string:
                             print l["href"],l.string
-                            self.get_content(url=l["href"])
+                            t,context = self.get_content(url=l["href"])
+                            doc = {"链接": l["href"], "标题": l.string, "时间": t, "正文": context}
+                            m.insert_one_doc(doc=doc)
                             self.seen.add(l["href"])
                             break
         else:#查找所有 不需要匹配关键字
             for l in all_links:
                 if l["href"] not in self.seen:
                     print l["href"], l.string
-                    self.get_content(url=l["href"])
+                    t, context = self.get_content(url=l["href"])
+                    doc = {"链接": l["href"], "标题": l.string, "时间": t, "正文": context}
+                    m.insert_one_doc(doc=doc)
                     self.seen.add(l["href"])
         return
 
@@ -111,9 +133,8 @@ class baidu_search(kws):
         for i in range(1,11,1):
             all_links = self.soup.find('table',id = str(i))
             print re.sub(r'''<[^>]+>''', '', str(all_links.find('a'))),re.sub(r'''<[^>]+>''', '', str(all_links.find('font')))
+
         return
-
-
 
 
 def main():
