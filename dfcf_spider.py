@@ -135,14 +135,32 @@ class baidu_search(kws):
             print re.sub(r'''<[^>]+>''', '', str(all_links.find('a'))),re.sub(r'''<[^>]+>''', '', str(all_links.find('font')))
 
         return
+class tianya_search(kws):
+    def get_content(self, url):
+        self.parse_page(url)
+        # print self.soup.find_all('p')
+        items = self.soup.find_all(class_='atl-item')
+        for item in items:
+            item.find(class_='atl-info')
+            print t
 
+        # context = re.sub(r'''<[^>]+>''', '', str(self.soup.find(id='ContentBody')))
+
+        # return (t, context)
 
 def main():
 
-    k = kws(domains=[],kw=[],start_url = 'http://forex.eastmoney.com/news/cdhgd.html')
-    while (1):
-        k.find_all_links(url=k.url)
-        sleep(120)
+    # k = kws(domains=[],kw=[],start_url = 'http://forex.eastmoney.com/news/cdhgd.html')
+    # while (1):
+    #     k.find_all_links(url=k.url)
+    #     sleep(120)
+
+    ty = tianya_search(domains=[],kw=[],start_url = 'http://bbs.tianya.cn/post-develop-2106433-425.shtml#fabu_anchor')
+    ty.get_content(url=ty.url)
+
+
+
+
     # bd = baidu_search(domains=[], kw=[], start_url \
     #    = 'https://www.baidu.com/s?tn=baidurt&rtt=1&bsst=1&cl=3&ie=utf-8&bs=%E6%AC%A7%E6%B4%B2%E5%A4%AE%E8%A1%8C&f=8&rsv_bp=1&wd=%E8%8B%B1%E5%9B%BD%E5%A4%AE%E8%A1%8C&inputT=4700')
     # bd.find_all_links(url = bd.url)
