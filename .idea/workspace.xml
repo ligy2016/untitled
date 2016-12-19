@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab723786-2247-4080-a426-4a5a0b3e0c37" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dfcf_spider.py" afterPath="$PROJECT_DIR$/dfcf_spider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numpy_1.py" afterPath="$PROJECT_DIR$/numpy_1.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="autolog.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autolog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="1593">
               <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
@@ -64,7 +64,7 @@
       <file leaf-file-name="chinese.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chinese.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="270">
               <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
@@ -76,7 +76,7 @@
       <file leaf-file-name="bs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
+            <state relative-caret-position="1323">
               <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -88,9 +88,10 @@
       <file leaf-file-name="nse_no_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nse_no_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="24" />
               <folding>
+                <element signature="e#32#46#0" expanded="true" />
                 <element signature="e#2301#2372#0" expanded="false" />
               </folding>
             </state>
@@ -111,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dfcf_spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dfcf_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dfcf_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="154" column="37" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="29">
+              <caret line="134" column="82" selection-start-line="134" selection-start-column="82" selection-end-line="134" selection-end-column="82" />
               <folding>
                 <element signature="e#14#43#0" expanded="true" />
               </folding>
@@ -133,12 +134,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numpy_1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="numpy_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/numpy_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="891">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#59#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,10 +167,10 @@
         <option value="$PROJECT_DIR$/gettext.py" />
         <option value="$PROJECT_DIR$/nse_no_db.py" />
         <option value="$PROJECT_DIR$/nse_kw.py" />
-        <option value="$PROJECT_DIR$/numpy_1.py" />
         <option value="$PROJECT_DIR$/savemd.py" />
         <option value="$PROJECT_DIR$/autolog.py" />
         <option value="$PROJECT_DIR$/dfcf_spider.py" />
+        <option value="$PROJECT_DIR$/numpy_1.py" />
       </list>
     </option>
   </component>
@@ -230,7 +233,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
   </component>
-  <component name="RunManager" selected="Python.dfcf_spider">
+  <component name="RunManager" selected="Python.numpy_1">
     <configuration default="false" name="nse_kw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -459,9 +462,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dfcf_spider" />
-        <item index="1" class="java.lang.String" itemvalue="Python.autolog" />
-        <item index="2" class="java.lang.String" itemvalue="Python.numpy_1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.numpy_1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dfcf_spider" />
+        <item index="2" class="java.lang.String" itemvalue="Python.autolog" />
         <item index="3" class="java.lang.String" itemvalue="Python.savemd" />
         <item index="4" class="java.lang.String" itemvalue="Python.nse_kw" />
       </list>
@@ -656,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481785171252</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="tianya">
+      <created>1481881878581</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1481881878581</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -673,13 +683,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12197743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734289" sideWeight="0.485223" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19205298" sideWeight="0.43901128" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734289" sideWeight="0.48307362" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38919514" sideWeight="0.44331005" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.49739778" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.30306286" sideWeight="0.44868422" order="3" side_tool="false" content_ui="combo" x="552" y="69" width="580" height="773" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13907285" sideWeight="0.4793122" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19205298" sideWeight="0.5609887" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13891952" sideWeight="0.4771628" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38919514" sideWeight="0.55669" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12144008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21412803" sideWeight="0.5217625" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21389195" sideWeight="0.51746374" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.57880247" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -687,7 +698,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.49710983" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.49739778" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -717,7 +727,8 @@
     <MESSAGE value="添加baidu" />
     <MESSAGE value="添加mongodb 存储" />
     <MESSAGE value="添加自动日志post还不成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加自动日志post还不成功" />
+    <MESSAGE value="tianya" />
+    <option name="LAST_COMMIT_MESSAGE" value="tianya" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,6 +805,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#32#46#0" expanded="true" />
             <element signature="e#2301#2372#0" expanded="false" />
           </folding>
         </state>
@@ -1048,9 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="96" column="35" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="35" />
-          <folding>
-            <element signature="e#33#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,7 +1083,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chinese.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="270">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
@@ -1084,20 +1093,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
+        <state relative-caret-position="1323">
           <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nse_no_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="e#2301#2372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,17 +1113,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autolog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="1593">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#14#44#0" expanded="true" />
@@ -1140,12 +1131,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nse_no_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#2301#2372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dfcf_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="154" column="37" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="29">
+          <caret line="134" column="82" selection-start-line="134" selection-start-column="82" selection-end-line="134" selection-end-column="82" />
           <folding>
             <element signature="e#14#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numpy_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#59#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
