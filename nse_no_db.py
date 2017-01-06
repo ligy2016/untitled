@@ -9,6 +9,7 @@ import re
 import time
 import copy
 import mysql
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 class ScrawlSite():
@@ -77,9 +78,11 @@ class SS_fx168(ScrawlSite):
         self.new_a_set = self.soup.find_all(href=re.compile("fx168"), text=True)
 class DFCF_DHGD(ScrawlSite):#东方财富大行观点
     def FindPattern(self):
-        div = self.soup.find(id='newsListContent')
-        self.new_a_set = div.find_all(href=True, text=True)
-
+        try:
+            div = self.soup.find(id='newsListContent')
+            self.new_a_set = div.find_all(href=True, text=True)
+        except StandardError,e:
+            print e
 
 class DFCF_USD(ScrawlSite):  # 东方财富美元
     def FindPattern(self):

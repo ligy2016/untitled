@@ -26,12 +26,12 @@ class MYSQL:
             return cur
 
     def SelectTopNUrls(self,tablename,n):
-        sqlstr = "select url from `new_schema`.`%s` order by time desc limit 0, %d " % (tablename, n)
+        sqlstr = "select url from `%s`.`%s` order by time desc limit 0, %d " % (self.db,tablename, n)
         self.cur.execute(sqlstr)
         return self.cur.fetchall()
 
     def SaveContent(self, tablename, url, title):
-        sqlstr = "insert into `new_schema`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (tablename, title.strip(),url)
+        sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (self.db,tablename, title.strip(),url)
         self.cur.execute(sqlstr)
         # self.conn.commit()
 
@@ -42,7 +42,11 @@ class MYSQL:
             for url in urls:
                 self.SaveContent(tablename, url, dict.get(url, 'not found')[0].strip())
 
-
+    def InsertContent(self, tablename, content_time ,  title ,	content ,  url ):
+        sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`,`content_time`,`content`) values (now() ,'%s','%s','%s','%s')"\
+                 % (self.db,tablename, title.strip(),url,content_time.strip(),content)
+        print sqlstr
+        self.cur.execute(sqlstr)
     def ExecQuery(self,sql):
         """
         执行查询语句
