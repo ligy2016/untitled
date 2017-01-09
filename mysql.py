@@ -31,6 +31,11 @@ class MYSQL:
         return self.cur.fetchall()
 
     def SaveContent(self, tablename, url, title):
+        sqlstr = "select url from `%s`.`%s` where url = '%s'" % (self.db, tablename, url)
+        list = self.ExecQuery(sql=sqlstr)
+        if len(list) > 0:
+            print url, '已存在'
+            return
         sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (self.db,tablename, title.strip(),url)
         self.cur.execute(sqlstr)
         # self.conn.commit()
@@ -40,13 +45,19 @@ class MYSQL:
             return
         else:
             for url in urls:
+                sqlstr = "select url from `%s`.`%s` where url = '%s'" % (self.db, tablename,url)
+                list = self.ExecQuery(sql=sqlstr)
+                if len(list)>0:
+                    print url,'已存在'
+                    continue
                 self.SaveContent(tablename, url, dict.get(url, 'not found')[0].strip())
 
     def InsertContent(self, tablename, content_time ,  title ,	content ,  url ):
         sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`,`content_time`,`content`) values (now() ,'%s','%s','%s','%s')"\
                  % (self.db,tablename, title.strip(),url,content_time.strip(),content)
-        print sqlstr
+        # print sqlstr
         self.cur.execute(sqlstr)
+
     def ExecQuery(self,sql):
         """
         执行查询语句
@@ -59,8 +70,8 @@ class MYSQL:
                     print str(id),NickName
         """
         # cur = self.__GetConnect()
-        cur.execute(sql)
-        resList = cur.fetchall()
+        self.cur.execute(sql)
+        resList = self.cur.fetchall()
 
         #查询完毕后必须关闭连接
         # self.conn.close()
@@ -83,5 +94,5 @@ class MYSQL:
         """
         # cur = self.__GetConnect()
         self.cur.execute(sql)
-        self.conn.commit()
+        # self.conn.commit()
         # self.conn.close()

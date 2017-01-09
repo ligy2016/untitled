@@ -130,30 +130,30 @@ def main():
         dfcf_dhgd.gg()
         db.SaveUrls(dfcf_dhgd.tablename, dfcf_dhgd.new_urls, dfcf_dhgd.urldict)
 
-        dfcf_whpl.gg()
-        db.SaveUrls(dfcf_whpl.tablename, dfcf_whpl.new_urls, dfcf_whpl.urldict)
-
-        dfcf_usd.gg()
-        db.SaveUrls(dfcf_usd.tablename, dfcf_usd.new_urls ,dfcf_usd.urldict)
-
-        dfcf_jpy.gg()
-        db.SaveUrls(dfcf_jpy.tablename, dfcf_jpy.new_urls, dfcf_jpy.urldict)
-
-        dfcf_eur.gg()
-        db.SaveUrls(dfcf_eur.tablename, dfcf_eur.new_urls, dfcf_eur.urldict)
-
-        dfcf_gbp.gg()
-        db.SaveUrls(dfcf_gbp.tablename, dfcf_gbp.new_urls, dfcf_gbp.urldict)
-
-        dfcf_aud.gg()
-        db.SaveUrls(dfcf_aud.tablename, dfcf_aud.new_urls, dfcf_aud.urldict)
-
-        dfcf_nzd.gg()
-        db.SaveUrls(dfcf_nzd.tablename, dfcf_nzd.new_urls, dfcf_nzd.urldict)
+        # dfcf_whpl.gg()
+        # db.SaveUrls(dfcf_whpl.tablename, dfcf_whpl.new_urls, dfcf_whpl.urldict)
+        #
+        # dfcf_usd.gg()
+        # db.SaveUrls(dfcf_usd.tablename, dfcf_usd.new_urls ,dfcf_usd.urldict)
+        #
+        # dfcf_jpy.gg()
+        # db.SaveUrls(dfcf_jpy.tablename, dfcf_jpy.new_urls, dfcf_jpy.urldict)
+        #
+        # dfcf_eur.gg()
+        # db.SaveUrls(dfcf_eur.tablename, dfcf_eur.new_urls, dfcf_eur.urldict)
+        #
+        # dfcf_gbp.gg()
+        # db.SaveUrls(dfcf_gbp.tablename, dfcf_gbp.new_urls, dfcf_gbp.urldict)
+        #
+        # dfcf_aud.gg()
+        # db.SaveUrls(dfcf_aud.tablename, dfcf_aud.new_urls, dfcf_aud.urldict)
+        #
+        # dfcf_nzd.gg()
+        # db.SaveUrls(dfcf_nzd.tablename, dfcf_nzd.new_urls, dfcf_nzd.urldict)
 
 
         db.conn.commit()
-        # break
+        break
         sleep(300)
 
     db.DisconnectDB()
