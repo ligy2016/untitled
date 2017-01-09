@@ -88,7 +88,7 @@ class DFCF_NZD(DFCF_USD):
 
 def main():
 
-    dfcf_dhgd = DFCF_DHGD(url = "http://forex.eastmoney.com/news/cdhgd.html",tablename = "dfcf_dhgd", n = 3)
+    dfcf_dhgd = DFCF_DHGD(url = "http://forex.eastmoney.com/news/cdhgd.html",tablename = "dfcf_dhgd", n = 1)
     # dfcf_whpl = DFCF_WHPL(url="http://forex.eastmoney.com/news/cwhpl.html", tablename="dfcf_whpl")
     # dfcf_usd = DFCF_USD(url="http://forex.eastmoney.com/news/aUSD.html", tablename="dfcf_usd")
     # dfcf_jpy = DFCF_JPY(url="http://forex.eastmoney.com/news/aJPY.html", tablename="dfcf_jpy")
