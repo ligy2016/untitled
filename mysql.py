@@ -30,15 +30,15 @@ class MYSQL:
         self.cur.execute(sqlstr)
         return self.cur.fetchall()
 
-    def SaveContent(self, tablename, url, title):
+    def SaveContent(self, tablename, url, title,str_date):
         sqlstr = "select url from `%s`.`%s` where url = '%s'" % (self.db, tablename, url)
         list = self.ExecQuery(sql=sqlstr)
         if len(list) > 0:
-            print url, '已存在'
+            # print url, '已存在'
             return
-        sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`) values (now() ,'%s','%s')" % (self.db,tablename, title.strip(),url)
+        sqlstr = "insert into `%s`.`%s` (`time`,`title`,`url`) values ( str_to_date( '%s','%%Y%%m%%d'),'%s','%s')" % (self.db,tablename,str_date, title.strip(),url)
+        print url, title
         self.cur.execute(sqlstr)
-        # self.conn.commit()
 
     def SaveUrls(self, tablename, urls, dict):
         if urls is None:
