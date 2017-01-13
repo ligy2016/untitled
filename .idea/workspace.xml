@@ -7,7 +7,6 @@
     <list default="true" id="ab723786-2247-4080-a426-4a5a0b3e0c37" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllNewsLinks.py" afterPath="$PROJECT_DIR$/AllNewsLinks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.py" afterPath="$PROJECT_DIR$/mysql.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +54,7 @@
       <file leaf-file-name="nse_no_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nse_no_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-585">
+            <state relative-caret-position="1809">
               <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="e#32#61#0" expanded="true" />
@@ -67,8 +66,8 @@
       <file leaf-file-name="AllNewsLinks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AllNewsLinks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="124" column="13" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="13" />
+            <state relative-caret-position="371">
+              <caret line="119" column="10" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
               <folding>
                 <element signature="e#32#61#0" expanded="true" />
               </folding>
@@ -79,7 +78,7 @@
       <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="864">
               <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding />
             </state>
@@ -89,7 +88,7 @@
       <file leaf-file-name="pc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3078">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#32#46#0" expanded="true" />
@@ -193,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -214,7 +214,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -700,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483952668907</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="加入新闻时间">
+      <created>1484129830937</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1484129830937</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -718,10 +724,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11959958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734289" sideWeight="0.48307362" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.4020021" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33297297" sideWeight="0.40463647" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.40507013" sideWeight="0.44868422" order="3" side_tool="false" content_ui="combo" x="841" y="69" width="767" height="887" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13781698" sideWeight="0.47087377" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5979979" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.59536356" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12144008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21302429" sideWeight="0.51103365" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -767,7 +773,8 @@
     <MESSAGE value="刷新多张表" />
     <MESSAGE value="存数据库" />
     <MESSAGE value="直接存储前n页入MySQL，剔除已经保存过的" />
-    <option name="LAST_COMMIT_MESSAGE" value="直接存储前n页入MySQL，剔除已经保存过的" />
+    <MESSAGE value="加入新闻时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入新闻时间" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,7 +1143,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3078">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#46#0" expanded="true" />
@@ -1148,7 +1155,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nse_no_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585">
+        <state relative-caret-position="1809">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="e#32#61#0" expanded="true" />
@@ -1184,7 +1191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="864">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding />
         </state>
@@ -1192,8 +1199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AllNewsLinks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="124" column="13" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="371">
+          <caret line="119" column="10" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
           <folding>
             <element signature="e#32#61#0" expanded="true" />
           </folding>

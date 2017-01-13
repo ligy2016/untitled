@@ -107,8 +107,8 @@ class DFCF_WHPL(DFCF_DHGD):
 
 def main():
 
-    dfcf_dhgd = DFCF_DHGD(url = "http://forex.eastmoney.com/news/cdhgd.html",tablename = "dfcf_dhgd", n = 10)
-    dfcf_whpl = DFCF_DHGD(url="http://forex.eastmoney.com/news/cwhpl.html", tablename="dfcf_whpl",n=10)
+    dfcf_dhgd = DFCF_DHGD(url = "http://forex.eastmoney.com/news/cdhgd.html",tablename = "dfcf_dhgd", n = 2)
+    dfcf_whpl = DFCF_DHGD(url="http://forex.eastmoney.com/news/cwhpl.html", tablename="dfcf_whpl",n=2)
     dfcf_usd = DFCF_USD(url="http://forex.eastmoney.com/news/aUSD.html", tablename="dfcf_usd",n=10)
     # dfcf_jpy = DFCF_USD(url="http://forex.eastmoney.com/news/aJPY.html", tablename="dfcf_jpy",n=1)
     # dfcf_eur = DFCF_USD(url="http://forex.eastmoney.com/news/aEUR.html", tablename="dfcf_eur",n=1)
@@ -116,11 +116,11 @@ def main():
     # dfcf_aud = DFCF_USD(url="http://forex.eastmoney.com/news/aAUD.html", tablename="dfcf_aud",n=10)
     # dfcf_nzd = DFCF_USD(url="http://forex.eastmoney.com/news/aNZD.html", tablename="dfcf_nzd",n=10)
     # 期货导读
-    dfcf_chdd = DFCF_ZHZX(url="http://futures.eastmoney.com/news/cqhdd.html", tablename="dfcf_qhdd",n=3)
+    dfcf_qhdd = DFCF_ZHZX(url="http://futures.eastmoney.com/news/cqhdd.html", tablename="dfcf_qhdd",n=4)
     # 焦点观察
     dfcf_jdgc = DFCF_ZHZX(url="http://futures.eastmoney.com/news/cjdgc.html", tablename="dfcf_jdgc", n=10)
     # 综合资讯
-    dfcf_zhzx = DFCF_ZHZX(url="http://futures.eastmoney.com/news/czhzx.html", tablename="dfcf_zhzx", n=10)
+    dfcf_zhzx = DFCF_ZHZX(url="http://futures.eastmoney.com/news/czhzx.html", tablename="dfcf_zhzx", n=3)
 
     dfcf_whpl.read_n_pages()
 
