@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 import sys
+import AllNewsLinks
 from time import sleep, ctime
 while(0):
     print 'loop 1 done at:', ctime()

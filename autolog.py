@@ -2,6 +2,11 @@
 import httplib, urllib,urllib2
 import cookielib
 import requests
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+import time
 # def auto_write_log():
 #     # 定义需要进行发送的数据
 #     params = urllib.urlencode({'cat_id': '6',
@@ -49,16 +54,80 @@ def log():
     # 查看表单提交后返回内容
     print urllib2.urlopen(req2).read()
 def logs():
-    logs = {'comment': '日志'}
-    para = {'username': 'ligy', 'password': '888888'}
-    r = requests.post('http://192.168.1.91/zentao/user-login-L3plbnRhby90YXNrLXZpZXctMTkzNy5odG1s.html',para)
-    print r
-        # .cookies.get_dict()
+    # logs = {'comment': '日志'}
+    # para = {'username': 'ligy', 'password': '888888'}
+    # r = requests.post('http://192.168.1.91/zentao/user-login.html',para)
+    # print r
+
+    driver = webdriver.PhantomJS(executable_path='d:\phantomjs-2.1.1-windows\gbin\phantomjs.exe')
+    # driver.get("http://pythonscraping.com/page/javascript/ajaxDemo.html")
+    driver.get('http://192.168.1.91/zentao/user-login.html')
+
+    element = driver.find_element_by_id('account')
+    element.send_keys("ligy")
+    element = driver.find_element_by_name('password')
+    element.send_keys("888888")
+    driver.find_element_by_id('submit').click()
+    time.sleep(1)
+    # .cookies.get_dict()
     # r = requests.get
     # req2 = urllib2.Request('http://192.168.1.91/zentao/task-view-1937.html', urllib.urlencode(logs))
     # print urllib2.urlopen(req2).read()
-    r = requests.post('http://192.168.1.91/zentao/task-view-1937.html', logs)
+    # r = requests.post('http://192.168.1.91/zentao/task-view-1937.html', logs)
     # print r
+
+
+    # driver = webdriver.PhantomJS(executable_path='d:\phantomjs-2.1.1-windows\gbin\phantomjs.exe')
+
+    driver.get('http://192.168.1.91/zentao/task-view-1937.html')
+    driver.maximize_window()
+    driver.find_element(By.LINK_TEXT,'请写日志').click()
+    time.sleep(4)
+    # print driver.page_source
+
+    # iframe = driver.switch_to.frame(driver.find_element_by_xpath("//iframe[contains(@class,'ke-edit-iframe')]"))
+    driver.switch_to.frame(driver.find_element_by_xpath('//*[@id="commentBox"]/form/div/div/div[2]/iframe'))
+    # ele = driver.find_element_by_xpath("//*[@id='commentBox']/form/div/div/div[2]/iframe")
+    # print driver.page_source
+    # driver.find_element_by_tag_name('body').send_keys('Hello world!')
+    driver.find_element_by_class_name('article-content').clear()
+    driver.find_element_by_class_name('article-content').send_keys("pppppppppppppp")
+    # driver.find_element_by_class_name('article-content').send_keys(Keys.ENTER)
+    # driver.find_element_by_class_name('article-content').submit()
+
+    time.sleep(2)
+
+    # print driver.find_element_by_class_name('article-content').text
+    print driver.page_source
+    # driver.find_element(By.LINK_TEXT,'请写日志').click()
+    # element = driver.find_element_by_tag_name('legend')
+    # iframe = driver.find_element_by_xpath("//iframe[contains(@class,'ke-edit-iframe')]")
+
+    # driver.switch_to.frame(driver.find_element(By.XPATH,"//iframe[@_class=‘ke-edit-iframe']"))
+    # driver.switch_to.frame('iframe')
+    # driver.switch_to.frame(2)
+    # print 'iframe:',driver.page_source
+    # print '1:',driver.find_element_by_tag_name('body').text
+    # driver.find_element_by_tag_name('body').send_keys('Hello world!')
+    # time.sleep(2)
+    # actions = ActionChains(driver)
+    # actions.send_keys('Hello world!').send_keys(Keys.RETURN)
+    # actions.perform()
+
+    # driver.find_element_by_tag_name('body').send_keys("log!!")
+    # print '2:',driver.find_element_by_tag_name('body').text
+    # element = driver.find_element_by_id('commentBox')
+    # element.send_keys("my log")
+
+    driver.switch_to.default_content()
+    # print "default:", driver.page_source
+    element = driver.find_element(By.XPATH,'//*[@id="commentBox"]/form/button')
+    element.click()
+    # print element.text
+    # element.click()
+
+
+    driver.quit()
 
 def main():
     logs()

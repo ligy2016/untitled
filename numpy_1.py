@@ -1,5 +1,5 @@
 #coding=utf-8
-# import numpy as np
+import numpy as np
 # from pandas import  *
 import sys
 # import pandas as pd
@@ -41,10 +41,13 @@ def analysis_data(path,eth,start,end):
 def test_pandas():
     obj = pandas.Series([4,7,-5,3])
     print obj
+def draw():
+    plot(np.arange(10))
 
 # arry1 = np.array(data1)
 # print arry1,arry1.dtype
 
 if __name__ == '__main__':
     # print sys.argv[1]
-    analysis_data(path = sys.argv[1],eth = sys.argv[2],start=sys.argv[3],end = sys.argv[4])
+    # analysis_data(path = sys.argv[1],eth = sys.argv[2],start=sys.argv[3],end = sys.argv[4])
+    draw()
